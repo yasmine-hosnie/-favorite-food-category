@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasty Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <header class="topbar">
+            <h1>Tasty Explorer</h1>
+            <p>Choose your favorite food category</p>
+            <select id="foodFilter">
+                <option disabled selected>-- Choose Category --</option>
+                <option value="Beef">Beef</option>
+                <option value="Chicken">Chicken</option>
+                <option value="Dessert">Dessert</option>
+                <option value="Seafood">Seafood</option>
+                <option value="Vegan">Vegan</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Pasta">Pasta</option>
+            </select>
+        </header>
+
+        <section id="mealsDisplay"></section>
+
+        <div id="popup" class="modal">
+            <div class="modal-content">
+                <span id="closeBtn" class="exit">&times;</span>
+                <h2 id="dishTitle"></h2>
+                <img id="dishImg" src="" alt="" />
+                <h3>Ingredients</h3>
+                <ul id="ingredientsList"></ul>
+                <h3>Instructions</h3>
+                <p id="instructions"></p>
+                <a id="videoLink" href="#" target="_blank">▶ Watch on YouTube</a>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>
